@@ -94,6 +94,7 @@ Textbox my_textbox = new Textbox(300,300);
 
 void setup() {
   size(640, 540);
+  bg = loadImage("download.jpg");
 }
 
 
@@ -101,7 +102,7 @@ void setup() {
 
 
 void draw() {
-  background(0);
+  background(bg);
   if(state == 0) {
     my_textbox.draw();
   } else if (state == 3) {
