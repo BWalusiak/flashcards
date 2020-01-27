@@ -1,4 +1,5 @@
-PImage img = null;  
+PImage img = null;
+PImage bg;
 
 Table cards = null;
 String desc = "file does not exist";
@@ -95,6 +96,7 @@ Textbox my_textbox = new Textbox(300,300);
 void setup() {
   size(640, 540);
   bg = loadImage("download.jpg");
+  bg.resize(640,540);
 }
 
 
